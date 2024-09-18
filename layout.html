@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Layout HTML</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Protest+Guerrilla&display=swap" rel="stylesheet">
+		<style>
+			*{
+				box-sizing: border-box;
+			}
+			
+			body{
+				text-align: center;
+				font-family: "Oswald", sans-serif;
+			}
+			.header{
+				background-color: blue;
+				color: white;
+				padding: 20px;
+			}
+			
+						
+			.sidebar{
+				background-color: red;
+				color: white;
+				width: 30%;
+				height: 250px;
+				float: left;
+			}
+			
+			.sidebar, .content{
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+			
+			.content{
+				background-color: green;
+				color: white;
+				width: 70%;
+				height: 250px;
+				float: left;
+			}
+			
+			.footer{
+				background-color: #000;
+				color: #FFF;
+				padding: 20px;
+				clear: both;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="header">
+			<h1>Header</h1>
+		</div>
+		<div class="sidebar">
+			<p>Sidebar</p>
+		</div>
+		<div class="content">
+			<p>Content</p>
+		</div>
+		<div class="footer">
+			<p>Footer</p>
+		</div>
+	</body>
+</html>
