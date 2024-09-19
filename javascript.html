@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Javascript</title>
+	</head>
+	<body>
+		<h1 id="judul">Belajar Javascript</h1>
+		<h2 id="pesan"></h2>
+		
+		<button id="dark">Darkmode</button>
+		<button id="light">Lightmode</button>
+		
+		<br>
+		<br>
+		<br>
+		<a href="" onclick="alert('Link ini telah di klik')">Klik di sini</a>
+		<a href="" onmouseover="alert('Mouse Over')">Mouse Over</a>
+		
+		<script>
+			// window.alert("Peringatan!!");
+			console.log("Pesan dari Javascript")
+			
+			const a = 100; 
+			const b = 200;
+			console.log(a,b);
+			let nama = "Udin";
+			nama = "Budi";
+			let kelas = "TRPL-2B"
+			console.log(nama);
+			
+			document.write("<h2>"+nama+"</h2>");
+			// document.write("<p>Nama saya adalah " +nama+ ", saya kelas " +kelas+ "</p>");
+			// document.write(`<p>Nama saya adalah ${nama}, saya kelas ${kelas} </p>`);
+			
+			document.write(`
+				<table border='1' style = 'border-collapse:collapse' cellpadding = '8'>
+					<tr>
+						<th>No</th>
+						<th>NIM</th>
+						<th>Nama</th>
+					</tr>
+					
+					<tr>
+						<td>1</td>
+						<td>2311082029</td>
+						<td>Budi</td>
+					</tr>
+					
+					<tr>
+						<td>2</td>
+						<td>2311082028</td>
+						<td>Andi</td>
+					</tr>
+				</table>
+			`);
+			
+			let judul = document.getElementById("judul");
+			judul.innerHTML += " Pertemuan 1";
+			
+			let pesan = document.getElementById("pesan");
+			pesan.innerHTML = "Javascript itu mudah dan menyenangkan, bukan?";
+			
+			const body = document.body
+			let btnDark =  document.getElementById("dark");
+			let btnLight =  document.getElementById("light");
+			
+			btnDark.addEventListener('click', ()=> body.style = 'background-color: black; color:white;')
+			btnLight.addEventListener('click', ()=> body.style = 'background-color: white; color:black;')
+		
+		</script>
+	</body>
+</html>
