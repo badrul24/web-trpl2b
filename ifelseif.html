@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Percabangan if/else/if</title>
+	</head>
+	<body>
+		<script>
+			var nilai = prompt("Inputkan nilai akhir:");
+			var grade = "";
+			var ket = "";
+
+			if(nilai >= 90){
+				grade = "A"
+				ket = "Sangat Bagus" 
+			}else if(nilai >= 80){	
+				grade = "B+"
+				ket = "Lumayan Bagus"
+			}else if(nilai >= 70){	
+				grade = "B"
+				ket = "Bagus"
+			}else if(nilai >= 60){	
+				grade = "C+"
+				ket = "Lumayan Cukup"
+			}else if(nilai >= 50){	
+				grade = "C"
+				ket = "Cukup"
+			}else if(nilai >= 40){	
+				grade = "D"
+				ket = "Kurang"
+			}else if(nilai >= 30){	
+				grade = "E"
+				ket = "Sangat Kurang"
+			}else{ 
+				grade = "F"
+				ket = "Gagal"
+			}
+			document.write("<h2>Nilai anda: " + nilai +"</h2>");
+			document.write("<h2>Grade anda: " + grade +"</h2>");
+			document.write("<h2>Keterangan: " + ket +"</h2>");
+		</script>
+	</body>
+</html>
