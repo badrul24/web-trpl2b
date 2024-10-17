@@ -1,102 +1,420 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<title>Layout HTML</title>
-		<style>
-			*{
-				box-sizing: border-box;
-			}
-			
-			body{
-				font-family: Arial;
-			}
-			
-			.header{
-				background-color: #BA4A00 ;
-				color: white;
-				padding: 30px;
-				text-align: center;
-			}
-			
-						
-			.sidebar{
-				background-color: #85929E;
-				color: white;
-				width: 30%;
-				height: 250px;
-				float: left;
-				padding: 10px 20px;
-			}
-			
-			ul{
-				list-style-type: none;
-				padding : 0;
-			}
-			
-			a{
-				color: inherit;
-				text-decoration: none;
-			}
-			
-			h1{
-				font-size: 50px;
-			}
-			
-			h3{
-				color: black;
-			}
-			
-			.content{
-				background-color: #EBEDEF;
-				width: 70%;
-				height: 250px;
-				float: left;
-				padding: 10px 20px;
-			}
-			
-			.footer{
-				background-color: #BA4A00 ;
-				color: #FFF;
-				padding: 10px;
-				clear: both;
-				text-align: center;
-			}
-		</style>
-	</head>
-	<body>
-		<div class="header">
-			<h1>Teknologi Informasi</h1>
-		</div>
-		
-		<div class="sidebar">
-			<h3>Program Studi</h3>
-			<ul style="none">
-				<li><a href="tekom.html">D3 Teknik Komputer</a></li>
-				<li><a href="mi.html">D3 Manajemen Informatika</a></li>
-				<li><a href="trpl.html">D4 Teknologi Rekayasa Perangkat Lunak</a></li>
-				<li><a href="animasi.html">D4 Animasi</a></li>
-			</ul>
-			
-			<ul style="none">
-				<li><a href="index.html">Homepage</a></li>
-			</ul>
-		</div>
-		
-		<div class="content">
-			<h3>Selamat Datang</h3>
-			<p>
-				Jurusan Teknologi Informasi menghasilkan tenaga profesional tingkat ahli madya di  bidang Teknologi Informasi, khususnya pengelolaan informasi berbasis komputer sehingga mampu bekerja di berbagai instansi, perkantoran, organisasi dan bisnis modern
-			</p>
-			
-			<p>
-				Jurusan Teknologi Informasi memiliki fasilitas yang lengkap  seperti Air Conditioner, LED Projector, Labor Komputer dengan spesifikasi yang tinggi, ruangan yang nyaman dan lingkungan yang baik saat pelaksanaan pembelajaran
-			</p>
-			
-			
-		</div>
-		
-		<div class="footer">
-			<p>&copy; 2023 TI PNP | Politeknik Negeri Padang</p>
-		</div>
-	</body>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TEKINFO</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  </head>
+  <body>
+    <div class="py-2 text-end text-light" style="background-color: rgb(70, 165, 229)">
+        <div class="container">
+          <i class="bi bi-facebook me-3"></i>
+          <i class="bi bi-instagram me-3"></i>
+          <i class="bi bi-youtube me-3"></i>
+          <i class="bi bi-search"></i>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+      <div class="container">
+        <a class="navbar-brand" href="#"><img src="assets/GO.png"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Beranda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Profil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Program Studi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Akademik</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Penelitian</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Hubungi Kami
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Hubungi</a></li>
+                <li><a class="dropdown-item" href="#">Saran dan masukan</a></li>
+                <li><a class="dropdown-item" href="#">Chatbot Interactive</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="10000">
+          <img src="assets/slide1.jpg" class="d-block w-100" alt="..." height="650">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>First slide label</h5>
+            <p>Some representative placeholder content for the first slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="assets/slide2.jpg" class="d-block w-100" alt="..." height="650">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Second slide label</h5>
+            <p>Some representative placeholder content for the second slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="assets/slide3.jpg" class="d-block w-100" alt="..." height="650">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Third slide label</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <div class="bg-info pt-2 bg-2">
+      <div class="container py-3">
+        <div class="row align-items-center">
+          <div class="col-md-6 sm-12">
+            <p><h4><b>Penerimaan Mahasiswa Baru</b></h4>Informasi Tentang Penerimaan Mahasiswa Baru Politeknik Negeri Padang</p>
+          </div>
+          <div class="col-md-6 sm-12 text-end">
+            <button class="px-5 py-3 bg-light border-0 rounded-1 fw-700">
+              Tampilkan lebih banyak
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container my-4 pt-5">
+      <h4 class="text-center mb-5">Selamat Datang di Jurusan Teknologi Informasi</h4>
+      <h1 class="text-info text-center fw-folder mb-5" style="margin-top: -110px; font-size: 80px;">_____</h1>
+      <div class="row text-center">
+        <div class="col-md-3 sm-12 mb-3">
+          <div class="card pt-4">
+            <img src="assets/calendar.png" alt="..." width="50" class="mx-auto">
+            <div class="card-body">
+              <h5 class="card-title mb-4">KALENDER AKADEMIK</h5>
+              <p class="card-text">Semua kegiatan proses pembelajaran Politeknik Negeri Padang dalam satu tahun akademik</p>
+              <a href="#" class="btn btn-primary">Klik disini</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 sm-12 mb-3">
+          <div class="card pt-4">
+            <img src="assets/Akreditasi.jpg" alt="..." width="50" class="mx-auto">
+            <div class="card-body">
+              <h5 class="card-title mb-4">AKREDITASI PRODI</h5>
+              <p class="card-text">Penilaian kelayakan Program Studi Jurusan Teknologi Informasi Politkenik Negeri Padang</p>
+              <a href="#" class="btn btn-primary">Klik disini</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 sm-12 mb-3">
+          <div class="card pt-4">
+            <img src="assets/jadwal1.png" width="50" class="mx-auto">
+            <div class="card-body">
+              <h5 class="card-title mb-4">JADWAL KULIAH</h5>
+              <p class="card-text">Jadwal Perkuliahan Semester Ganjil Tahun Ajaran 2024/2025 Jurusan Teknologi Informasi</p>
+              <a href="#" class="btn btn-primary">Klik disini</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 sm-12 mb-3">
+          <div class="card pt-4">
+            <img src="./assets/download.png" width="50" class="mx-auto">
+            <div class="card-body">
+              <h5 class="card-title mb-4">DOWNLOAD AREA</h5>
+              <p class="card-text">Kumpulan Panduan / Standart Operating Prosedure Jurusan Teknologi Informasi</p>
+              <a href="#" class="btn btn-primary">Klik disini</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row text-center my-5 justify-content-center">
+        <div class="col-md-2 sm-12 mb-3">
+          <div class="card h-100 pt-4">
+            <img src="./assets/book-reader.svg" width="50" class="mx-auto" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">SPADA</h5>
+              <h1 class="text-info text-center fw-folder mb-4" style="margin-top: -80px; font-size: 80px;">_</h1>
+              <p class="card-text">SisFo Pembelajaran Daring</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2 sm-12 mb-3">
+          <div class="card h-100 pt-4">
+            <img src="./assets/book.svg" width="50" class="mx-auto" alt="...">
+            <div class="card-body d-flex flex-column justify-content-between">
+              <h5 class="card-title">SITA</h5>
+              <h1 class="text-info text-center fw-folder mb-4" style="margin-top: -80px; font-size: 80px;">_</h1>
+              <p class="card-text">SisFo Tugas Akhir</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2 sm-12 mb-3">
+          <div class="card h-100 pt-4">
+            <img src="./assets/address-card.svg" width="50" class="mx-auto" alt="...">
+            <div class="card-body d-flex flex-column justify-content-between">
+              <h5 class="card-title">SIAKAD</h5>
+              <h1 class="text-info text-center fw-folder mb-4" style="margin-top: -80px; font-size: 80px;">_</h1>
+              <p class="card-text">SisFo Akademik</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2 sm-12 mb-3">
+          <div class="card h-100 pt-4">
+            <img src="./assets/building.svg" width="50" class="mx-auto" alt="...">
+            <div class="card-body d-flex flex-column justify-content-between">
+              <h5 class="card-title">MBKM</h5>
+              <h1 class="text-info text-center fw-folder mb-4" style="margin-top: -80px; font-size: 80px;">_</h1>
+              <p class="card-text">SisFo MBKM</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2 sm-12 mb-3">
+          <div class="card h-100 pt-4">
+            <img src="./assets/comment-dots.svg" width="50" class="mx-auto" alt="...">
+            <div class="card-body d-flex flex-column justify-content-between">
+              <h5 class="card-title">SATIK</h5>
+              <h1 class="text-info text-center fw-folder mb-4" style="margin-top: -80px; font-size: 80px;">_</h1>
+              <p class="card-text">SisFo Saran & Kritik</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2 sm-12 mb-3">
+          <div class="card h-100 pt-4">
+            <img src="./assets/wavy-money-bill.svg" width="50" class="mx-auto" alt="...">
+            <div class="card-body d-flex flex-column justify-content-between">
+              <h5 class="card-title">UKT</h5>
+              <h1 class="text-info text-center fw-folder mb-4" style="margin-top: -80px; font-size: 80px;">_</h1>
+              <p class="card-text">SisFo Uang Kuliah Tunggal</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="my-4 pt-4 mx-5">
+      <h4 class="text-center my-5">BERITA TERBARU</h4>
+      <h1 class="text-info text-center fw-folder mb-4" style="margin-top: -110px; font-size: 80px;">_____</h1>
+      <p class="text-center mb-5">Berita Terbaru Seputar Jurusan Teknologi Informasi</p>
+      <div class="row text-light justify-content-between">
+        <div class="col-md-8 col-sm-12 ps-3">
+          <div class="card border-0 text-bg-dark card-img-y">
+            <img src="./assets/seminar.jpg" class="card-img-y" width="980" height="250" class="object-fit-cover" alt="...">
+            <div class="card-img-overlay d-flex flex-column justify-content-end">
+              <p class="card-text mb-0"><small>news</small></p>
+              <h4 class="card-title">SEMINAR MENTAL HEALTH DAN COMMUNICATION SKILL BAGI CIVITAS AKADEMIKA JURUSAN TEKNOLOGI INFORMASI</h4>
+              <p class="card-text">Yori Adi Atma - August,21 2024</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-12 ps-3">
+          <div class="card border-0 text-bg-dark">
+            <img src="./assets/ami.jpg" class="card-img-y" width="480" height="250" class="object-fit-cover" alt="...">
+            <div class="card-img-overlay d-flex flex-column justify-content-end">
+              <p class="card-text mb-0"><small>news</small></p>
+              <h5 class="card-title">Kegiatan Audit Mutu Internal (AMI) di Jurusan teknologi Informasi Politeknik Negeri Padang</h5>
+              <p class="card-text">Tekinfo Admin - July,27 2024</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-12 ps-3 mt-4">
+          <div class="card border-0 text-bg-dark">
+            <img src="./assets/bench.jpg" class="card-img-y" width="480" height="250" class="object-fit-cover" alt="...">
+            <div class="card-img-overlay d-flex flex-column justify-content-end">
+              <p class="card-text mb-0"><small>news</small></p>
+              <h5 class="card-title">Kegiatan Benchmarking Kurikulum Vokasi dan PBL Jurusan Teknologi Informasi Politeknik Negeri Padang</h5>
+              <p class="card-text">Tekinfo Admin - July,26 2024</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-12 ps-3 mt-4">
+          <div class="card border-0 text-bg-dark">
+            <img src="./assets/mi.jpg" class="card-img-y" width="480" height="250" class="object-fit-cover" alt="...">
+            <div class="card-img-overlay d-flex flex-column justify-content-end">
+              <p class="card-text mb-0"><small>news</small></p>
+              <h5 class="card-title">Program Studi Manajemen Informatika Jurusan Teknologi Informasi Politeknik Negeri Padang Jalani Asesmen Lapangan</h5>
+              <p class="card-text">Tekinfo Admin - July,25 2024</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-12 ps-3 mt-4">
+          <div class="card border-0 text-bg-dark">
+            <img src="./assets/pm.jpg" class="card-img-y" width="480" height="250" class="object-fit-cover" alt="...">
+            <div class="card-img-overlay d-flex flex-column justify-content-end">
+              <p class="card-text mb-0"><small>news, prestasi mhs</small></p>
+              <h5 class="card-title">Tim PKM PM Politeknik Negeri Padang Rancang Website Untuk Rumah Singgah Pasien M.Ihpan</h5>
+              <p class="card-text">Tekinfo Admin - July,24 2024</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-light mt-5 text-center" style="background-image: url(https://i2.wp.com/ti.pnp.ac.id/wp-content/uploads/2022/01/5039684-scaled.jpg);">
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-md-3 col-sm-12 mb-5">
+            <h1 style="font-size: 70px ">986</h1>
+            <h5>Mahasiswa</h5>
+          </div>
+          <div class="col-md-3 col-sm-12 mb-5">
+            <h1 style="font-size: 70px ">73</h1>
+            <h5>Dosen</h5>
+          </div>
+          <div class="col-md-3 col-sm-12 mb-5">
+            <h1 style="font-size: 70px ">10</h1>
+            <h5>Lab.Komputer</h5>
+          </div>
+          <div class="col-md-3 col-sm-12 mb-5">
+            <h1 style="font-size: 70px ">8</h1>
+            <h5>Program Studi</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mb-5">
+      <h4 class="text-center my-5">MITRA KAMI</h4>
+      <h1 class="text-info text-center fw-folder mb-4" style="margin-top: -110px; font-size: 80px;">_____</h1>
+      <div class="row justify-content-center text-center">
+        <div class="col-md-3 col-sm-12 mb-3">
+          <img src="./assets/Microsoft-Academy-Logo.png" alt="...">
+        </div>
+        <div class="col-md-3 col-sm-12 mb-3">
+          <img src="./assets/Cisco-Academi.jpg" alt="...">
+        </div>
+        <div class="col-md-3 col-sm-12 mb-3">
+          <img src="./assets/aws.png" alt="...">
+        </div>
+        <div class="col-md-3 col-sm-12 mb-3">
+          <img src="./assets/mikrotik-academy.jpg" alt="...">
+        </div>
+        <div class="col-md-3 col-sm-12 mb-3 mt-4">
+          <img src="./assets/oracle-academy.png" alt="...">
+        </div>
+        <div class="col-md-3 col-sm-12 mb-3 mt-4">
+          <img src="./assets/redhat.png" alt="...">
+        </div>
+      </div>
+    </div>
+    
+      <div class="container">
+        <div class="row mt-5 mb-3">
+          <div class="col-md-6 col-sm-12 mb-3">
+            <div class="card text-bg-dark mb-3">
+              <div class="card-body">
+                <h5 class="card-title">Pengumuman</h5>
+                <div class="row justify-content-between text-center">
+                  <div class="col-md-6 col-sm-12 mb-3">
+                    <img src="./assets/peng1.jpg" class="card-img" width="480" height="300" class="object-fit-cover" alt="...">
+                  </div>
+                  <div class="col-md-6 col-sm-12 mb-3">
+                    <img src="./assets/peng2.jpeg" class="card-img" width="480" height="300" class="object-fit-cover" alt="...">
+                  </div>
+                </div>
+                <div class="d-flex justify-content-center mt-3">
+                  <button type="button" class="btn btn-primary">Lainnya</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-md-6 col-sm-12 mb-3">
+            <div class="card text-bg-dark mb-3">
+              <div class="card-body">
+                <h5 class="card-title">Prestasi Mahasiswa</h5>
+                <div class="row justify-content-between text-center">
+                  <div class="col-md-6 col-sm-12 mb-3">
+                    <img src="./assets/pm.jpg" class="card-img" width="480" height="300" class="object-fit-cover" alt="...">
+                  </div>
+                  <div class="col-md-6 col-sm-12 mb-3">
+                    <img src="./assets/pres2.png" class="card-img" width="480" height="300" class="object-fit-cover" alt="...">
+                  </div>
+                </div>
+                <div class="d-flex justify-content-center mt-3">
+                  <button type="button" class="btn btn-primary">Lainnya</button>
+                </div>
+              </div>
+            </div> 
+          </div>   
+        </div> 
+      </div>
+
+
+    <footer class="bg-dark text-light p-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-sm-12">
+            <img src="assets/ti.png" class="card-img-top" alt="...">
+            <p class="pt-2">Kampus Politeknik Negeri Padang,<br>Limau Manis Padang<br>Kode Pos : 25176<br>Phone : 0751-72590</p>
+          </div>
+          <div class="col-md-3 col-sm-12">
+            <h5>OUR ACADEMY</h5>
+            <ul>
+              <li>Mikrotik Academy</li>
+              <li>Redhat Academy</li>
+              <li>Oracle Academy</li>
+              <li>AWS Educate</li>
+              <li>Cisco Networking Academy</li>
+              <li>Microsoft IT Academy</li>
+            </ul>
+          </div>
+          <div class="col-md-3 col-sm-12">
+            <h5>USEFUL LINKS</h5>
+            <ul>
+              <li>Academy</li>
+              <li>Akreditasi</li>
+              <li>Fasilitas</li>
+              <li>Jurnal</li>
+              <li>Saran dan Masukan</li>
+            </ul>
+          </div>
+          <div class="col-md-3 col-sm-12">
+            <h5>FOLLOW US</h5>
+            <div class="text-light">
+              <div class="container">
+                <i class="bi bi-facebook me-3"></i>
+                <i class="bi bi-instagram me-3"></i>
+                <i class="bi bi-youtube me-3"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      <hr>
+      <div class="row">
+        <div class="col-md-6 col-sm-12 mb-2">
+          Jurusan Teknologi Informasi
+        </div>
+        <div class="col-md-6 col-sm-12 mb-2 text-end text-light">
+            <i class="bi bi-facebook me-3"></i>
+            <i class="bi bi-instagram me-3"></i>
+            <i class="bi bi-youtube me-3"></i>
+        </div>
+      </div>
+    </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
 </html>
